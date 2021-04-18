@@ -35,21 +35,3 @@ function lunchIs() {
     displaySlot.style.display = "none";
   }
 }
-
-function changeColor() {
-  document.querySelectorAll("div")[num - 1].setAttribute("class", "selected"); //랜덤넘버가 선택됨
-  t = setTimeout(timeFunc(), 2000);
-  function timeFunc() {
-    if (inputNum == num) {
-      alert(
-        "축하합니다! 입력하신 번호는 " +
-          inputNum +
-          "이고, 당첨번호는 " +
-          num +
-          " \n 로또에 당첨되셨습니다."
-      );
-    } else {
-      alert("꽝");
-    }
-  }
-}
