@@ -15,19 +15,41 @@ console.log(shuffle(lunchList));
 let lunckPick = shuffle(lunchList)[0];
 
 function lunchIs() {
-  console.log(lunckPick);
-  let elem = document.querySelector(".menu_print > h2");
-  elem.innerHTML = lunckPick;
+  t = setTimeout(timeFunc, 900);
 
-  let i = FirstlunchList.indexOf(lunckPick);
+  function timeFunc() {
+    console.log(lunckPick);
+    let elem = document.querySelector(".menu_print > h2");
+    elem.innerHTML = lunckPick;
 
-  let elem2 = document.querySelector(".main_text> p > span");
-  elem2.innerHTML = distanceList[i];
+    let i = FirstlunchList.indexOf(lunckPick);
 
-  let elem3 = document.querySelector("em");
-  console.log(elem3);
-  elem3.innerHTML = costList[i];
+    let elem2 = document.querySelector(".main_text> p > span");
+    elem2.innerHTML = distanceList[i];
 
-  let displaySlot = document.querySelector(".menu_slot");
-  displaySlot.style.display = "none";
+    let elem3 = document.querySelector("em");
+    console.log(elem3);
+    elem3.innerHTML = costList[i];
+
+    let displaySlot = document.querySelector(".menu_slot");
+    displaySlot.style.display = "none";
+  }
+}
+
+function changeColor() {
+  document.querySelectorAll("div")[num - 1].setAttribute("class", "selected"); //랜덤넘버가 선택됨
+  t = setTimeout(timeFunc(), 2000);
+  function timeFunc() {
+    if (inputNum == num) {
+      alert(
+        "축하합니다! 입력하신 번호는 " +
+          inputNum +
+          "이고, 당첨번호는 " +
+          num +
+          " \n 로또에 당첨되셨습니다."
+      );
+    } else {
+      alert("꽝");
+    }
+  }
 }
