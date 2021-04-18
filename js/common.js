@@ -9,7 +9,11 @@ function shuffle(a) {
 }
 
 console.log(shuffle(lunchList));
-
 let lunckPick = shuffle(lunchList)[0];
 
-console.log(lunckPick);
+function lunchIs() {
+  console.log(lunckPick);
+
+  let elem = document.querySelector(".menu_print > h2");
+  elem.innerHTML = lunckPick;
+}
