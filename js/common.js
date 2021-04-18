@@ -27,4 +27,7 @@ function lunchIs() {
   let elem3 = document.querySelector("em");
   console.log(elem3);
   elem3.innerHTML = costList[i];
+
+  let displaySlot = document.querySelector(".menu_slot");
+  displaySlot.style.display = "none";
 }
