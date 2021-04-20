@@ -1,49 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Lunch Slot</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <script type="text/javascript" defer src="./js/common.js"></script>
-  </head>
 
-  <body>
-    <div class="container">
-      <div class="receipt">
-        <div class="title_text">
-          <h1>Lunch</h1>
-          <h3>menu pick</h3>
-        </div>
-        <div class="menu_print">
-          <h2></h2>
-        </div>
-        <div class="menu_slot">
-          <div class="slot_container">
-            <ul class="slide_box">
-              <li>카레</li>
-              <li>우동</li>
-              <li>햄버거</li>
-              <li>냉면</li>
-              <li>마라탕</li>
-            </ul>
-          </div>
-        </div>
-        <div class="main_text">
-          <p>DISTANCE &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp:<span>??m</span></p>
-          <p>
-            COST &nbsp
-            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:<em
-              >?000won</em
-            >
-          </p>
-          <p>LIKE&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp:♥♥♥♥♥</p>
-          <br />
-          <p>TOTAL &nbsp&nbsp&nbsp &nbsp &nbsp 100% like it</p>
-        </div>
-        <div class="btn_area">
-          <button onclick="lunchIs()">Pick menu</button>
+<head>
+  <meta charset="UTF-8" />
+  <title>Lunch Slot</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script type="text/javascript" defer src="./js/common.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="receipt">
+      <div class="title_text">
+        <h1>Lunch</h1>
+        <h3>menu pick</h3>
+      </div>
+      <div class="menu_print">
+        <h2></h2>
+      </div>
+      <div class="menu_slot">
+        <div class="slot_container">
+          <ul class="slide_box">
+            <li>카레</li>
+            <li>우동</li>
+            <li>햄버거</li>
+            <li>냉면</li>
+            <li>마라탕</li>
+          </ul>
         </div>
       </div>
+      <div class="main_text">
+        <p>DISTANCE &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp:<span>??m</span></p>
+        <p>
+          COST &nbsp
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp:<em>?000won</em>
+        </p>
+        <p>LIKE&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp:♥♥♥♥♥</p>
+        <br />
+        <p>TOTAL &nbsp&nbsp&nbsp &nbsp &nbsp 100% like it</p>
+      </div>
+      <div class="btn_area">
+        <button onclick="lunchIs()">Pick menu</button>
+        <button onclick="reset()">Reset</button>
+      </div>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
